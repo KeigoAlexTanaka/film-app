@@ -20,7 +20,7 @@ class FilmDetails extends Component {
           <h1>{this.props.film.title}</h1>
           <p>{new Date(this.props.film.release_date).getFullYear()}</p>
         </div>
-        <Fave />
+        <Fave onFaveToggle={this.props.onFaveToggle} isFave={this.props.isFave}/>
       </div>
     )
   }
