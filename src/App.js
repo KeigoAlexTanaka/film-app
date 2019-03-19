@@ -16,6 +16,11 @@ class App extends Component {
     this.handleFaveToggle = this.handleFaveToggle.bind(this);
   }
 
+  handleDetailsClick(film){
+    console.log(`fetching details for ${film.title}`)
+    this.setState({current: film})
+  }
+
   handleFaveToggle(film) {
     const faves = this.state.faves.slice();
     const filmIndex = faves.indexOf(film);

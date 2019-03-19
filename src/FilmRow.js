@@ -4,9 +4,7 @@ import Fave from './Fave.js';
 
 class FilmDetails extends Component {
 
-  handleDetailsClick(film){
-    console.log(`fetching details for ${film.title}`)
-  }
+ 
 
   render() {
     return (
